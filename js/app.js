@@ -2,6 +2,19 @@
 var voteRecords = 0;
 var winningVote = "";
 
+function startOver() {
+    voteRecords = 0;
+    winningVote = "";
+    var resultsContainer = document.getElementById('results');
+    var voteContainer = document.getElementById('votes');
+    var winningImageHolder = document.getElementById('winningImageHolder');
+    document.getElementById("choiceA").src = "img/cheese.jpg";
+    document.getElementById("choiceB").src = "img/pepperoni.jpg";
+    winningImageHolder.innerHTML = "";
+    voteContainer.classList.remove('hidden');
+    resultsContainer.classList.add('hidden');
+}
+
 function imageClick(imgName, voteId) {
     voteRecords++;
     winningVote = imgName;
@@ -26,10 +39,12 @@ function imageClick(imgName, voteId) {
         case 4:
             var resultsContainer = document.getElementById('results');
             var voteContainer = document.getElementById('votes');
+            var winningImageHolder = document.getElementById('winningImageHolder');
             var img = document.createElement('img');
             img.src = imgName;
+            img.id = "winningImage";
             img.classList.add('winningImage');
-            resultsContainer.appendChild(img);
+            winningImageHolder.appendChild(img);
             voteContainer.classList.add('hidden');
             resultsContainer.classList.remove('hidden');
             break;

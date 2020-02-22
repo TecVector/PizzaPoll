@@ -1,6 +1,11 @@
 .voteImg {
     max-height: 330px;
     margin: 15px 10%;
+    cursor: pointer;
+}
+
+.voteImg:hover {
+    box-shadow: blue 0px 0px 10px;
 }
 
 #choiceA {
