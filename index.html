@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pizza Poll</h1>
+        <hr />
+    </header>
+    <main>
+        <h2>Which Pizza Type is better?</h2>
+        <section class="voteChoiceContainer" id="votes">
+            <img class="voteImg" id="choiceA" src="img/cheese.jpg" onclick="imageClick(this.src, this.id)">
+            <img class="voteImg" id="choiceB" src="img/pepperoni.jpg" onclick="imageClick(this.src, this.id)">
+        </section>
+        <section class="voteResultsContainer hidden" id="results">
+            <h1>And the winner is...</h1>
+        </section>
+    </main>
+    <footer>
+
+
+    </footer>
+    <script src="js/app.js" async defer type="text/javascript"></script>
+</body>
+
+</html>

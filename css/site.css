@@ -1,0 +1,25 @@
+.voteImg {
+    max-height: 330px;
+    margin: 15px 10%;
+}
+
+#choiceA {
+    float: left;
+}
+
+#choiceB {
+    float: right;
+}
+
+.hidden {
+    display: none;
+}
+
+.voteResultsContainer {
+    text-align: center;
+}
+
+.winningImage {
+    width: 50%;
+    margin: 0 auto;
+}
